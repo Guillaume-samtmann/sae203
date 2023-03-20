@@ -15,7 +15,7 @@
 
 <main>
     <section class="haut-de-page">
-        <h1>"Si vous pensez que l'aventure est dangereuse, essayez la routine... Elle est mortelle."</h1>
+        <h1>"Si vous pensez que l'aventure est dangereuse, essayez la routine... Elle est totalement mortelle."</h1>
         <p>Paulo Coelho</p>
     </section>
 
