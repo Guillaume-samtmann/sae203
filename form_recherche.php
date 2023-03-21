@@ -22,8 +22,8 @@ require 'header.php';
 <section class="fond-form">
 <form method="post" action="reponse_recherche.php">
     
-    <label for="aventurier">Aventuriers : </label>
-    <input id="barre-recherche" type="text" name="aventurier" id="aventurier"><br />
+    <label for="texte">Aventuriers : </label>
+    <input id="barre-recherche" type="text" name="texte" id="texte"><br />
 
     <input id="button" type="submit" value="Afficher les expéditions réaliser par l'aventurier">
 
