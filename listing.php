@@ -33,7 +33,7 @@ require 'header.php';
                     echo '<p class="titre-expe"> nom de épéditions : ' .$value['nom_expe'] . '</p>';
                     echo '<p> <img class="model" src="images/uploads/' . $value['img_expe'] . '"> </p>';
                     echo '<div class="detail">';
-                        echo '<p>date de épéditions :' . $value['date_expe'] . '</p>';
+                       
                         echo '<p> durée de épéditions : ' . $value['dure_expe'] . ' en jours</p>';
                         echo '<p> Membre de épéditions : ' . $value['membre_expe'] . '</p>';
                         echo '<p> Lieu de épéditions : ' . $value['lieu_expe'] . '</p>';
