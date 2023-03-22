@@ -126,6 +126,10 @@ ul{
     .show-nav .third{
         transition: all 1.2s ease-out;
     }
+    .show-nav .four{
+        transition: all 1.3s ease-out;
+    }
+
 
 /*corp*/
 body{
@@ -368,7 +372,59 @@ footer p{
 }
 
 
+/***********page admin*******/
+.supportadmin{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.supportadmin a{
+    text-decoration: none;
+    font-size: 2em;
+    color: aliceblue; 
+}
+.button{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100px;
+    background: gray;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.button:hover{
+   scale: 0.9;
+   opacity: 0.9;
+}
 
+/**************gestion**/
+table{
+    margin: 20px 30px 40px 30px;
+}
+table td{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+}
+table .model{
+    width: 50%;
+    height: 50%;
+}
+
+.boutonretour{
+    font-size: 2em;
+    padding: 10px;
+    color: #000000;
+}
+
+.textintroadmin{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+}
 
 
 
@@ -388,7 +444,7 @@ footer p{
     }
     .navbar__links{
         height: auto;
-        width: 40%;
+        width: 45%;
         display: flex;
         flex-direction: row;
         position: inherit;
@@ -555,6 +611,9 @@ label{
     width: 900px;
     font-size: 1.2em;
 }
+
+/**********admin********/
+
 
 }
     

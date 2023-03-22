@@ -11,6 +11,8 @@
 <hr>
 <form action="table1_new_valide.php" method="POST" enctype="multipart/form-data">
     nom d'expédition:<input type="text" name="nomexpe"><br>
+    Lieu:<input type="text" name="lieuexpe"><br>
+    Membre:<input type="text" name="membreexpe"><br>
     Photo : <input type="file" name="photo" required /><br />
     date:<input type="datetime-local" name="date"><br>
     durée:<input type="text" name="duree"><br>

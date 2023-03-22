@@ -11,6 +11,8 @@
 <hr>
 <?php
 $nomexpe=$_POST['nomexpe'];
+$lieuexpe=$_POST['lieuexpe'];
+$membreexpe=$_POST['membreexpe'];
 $date=$_POST ['date'];
 $dure=$_POST['duree'];
 $numaven=$_POST['numaven'];
@@ -29,7 +31,7 @@ $mabd->query('SET NAMES utf8;');
 
 		//creation d'un nouveau nom pour cette image téléchargée
 		// pour éviter d'avoir 2 fichiers avec le même nom
-		$nouvelleImage =$_FILES["photo"]["name"];
+		$nouvelleImage =date("Y_m_d_H_i_s")."---".$_FILES["photo"]["name"];
 
 
 		// dépot du fichier téléchargé dans le dossier /var/www/sae203/images/uploads
@@ -43,8 +45,8 @@ $mabd->query('SET NAMES utf8;');
 			echo '<p>Problème : image non chargée...</p>'."\n";
 			die();
 		}
-$req = 'INSERT INTO expedition(nom_expe , date_expe , dure_expe , id_aven , img_expe) 
-VALUES( "'.$nomexpe.'", "'.$date.'", "'.$dure.'", "'.$numaven.'","'.$nouvelleImage.'" )';
+$req = 'INSERT INTO expedition(nom_expe , lieu_expe , membre_expe , date_expe , dure_expe , id_aven , img_expe) 
+VALUES( "'.$nomexpe.'", "'.$lieuexpe.'", "'.$membreexpe.'", "'.$date.'", "'.$dure.'", "'.$numaven.'","'.$nouvelleImage.'" )';
 echo $req;
 $resultat = $mabd->query($req);
 
