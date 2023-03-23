@@ -26,7 +26,8 @@ foreach ($resultat as $value) {
     echo '<div class="carte-expe">';
     echo '<p class="titre-expe"> nom de l\'expéditions : ' .$value['nom_expe'] . '</p>';
     echo '<p> <img class="model" src="images/uploads/' . $value['img_expe'] . '"> </p>';
-    echo '<div class="detail">';                  
+    echo '<div class="detail">';   
+    echo '<p> date de l\'expéditions : ' . $value['date_expe'] . '</p>';             
     echo '<p> durée de l\'expéditions : ' . $value['dure_expe'] . ' en jours</p>';
     echo '<p> Membre de l\'expéditions : ' . $value['membre_expe'] . '</p>';
     echo '<p> Lieu de l\'expéditions : ' . $value['lieu_expe'] . '</p>';

@@ -346,6 +346,13 @@ table .model{
     height: 60px;
     font-size: 2em;
 }
+
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
 /************version ordinateur***/
 
 @media screen and (min-width:480px){
@@ -414,10 +421,8 @@ main{
     width: 100%;
     OVERFLOW: hidden;
 }
-
 .item-a{
-    width: 300px;
-
+    width: 320px;
 }
 .carte{
     width: 90%;
@@ -436,7 +441,7 @@ main{
 }
 .carte-expe{
     width: 90%;
-    height: 450px;
+    height: 550px;
 }
 .titre-expe{
     padding-bottom: 30px;
