@@ -1,0 +1,4 @@
+DirectoryIndex admin.php
+RewriteEngine On
+RewriteRule expedition /var/www/sae203/admin/table1_gestion.php
+RewriteRule aventurier /var/www/sae203/admin/table2_gestion.php
