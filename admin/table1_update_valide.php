@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <a href="table1_gestion.php">retour au tableau de bord</a> 	<br>
@@ -13,6 +16,7 @@
 $num=$_POST['num'];
 $nomexpe=$_POST['nomexpe'];
 $lieuexpe=$_POST['lieuexpe'];
+$membreexpe=$_POST['membreexpe'];
 $date=$_POST['date'];
 $duree=$_POST['duree'];
 $numaven=$_POST['numaven'];
@@ -50,10 +54,10 @@ if($imageName!=""){
 	            echo '<p>Problème : image non chargée...</p>'."\n";
 	            die();}
 
-$req ='UPDATE expedition SET nom_expe="'.$nomexpe.'", lieu_expe="'.$lieuexpe.'", . img_expe="'.$nouvelleImage.'", date_expe="'.$date.'", dure_expe="'.$duree.'", id_aven="'.$numaven.'" WHERE id_expe='.$num ;
+$req ='UPDATE expedition SET nom_expe="'.$nomexpe.'", lieu_expe="'.$lieuexpe.'", membre_expe="'.$membreexpe.'", img_expe="'.$nouvelleImage.'", date_expe="'.$date.'", dure_expe="'.$duree.'", id_aven="'.$numaven.'" WHERE id_expe='.$num ;
 }
 else{
-	$req ='UPDATE expedition SET nom_expe="'.$nomexpe.'", lieu_expe="'.$lieuexpe.'" , date_expe="'.$date.'", dure_expe="'.$duree.'", id_aven="'.$numaven.'" WHERE id_expe='.$num ;
+	$req ='UPDATE expedition SET nom_expe="'.$nomexpe.'", lieu_expe="'.$lieuexpe.'", membre_expe="'.$membreexpe.'", date_expe="'.$date.'", dure_expe="'.$duree.'", id_aven="'.$numaven.'" WHERE id_expe='.$num ;
 }
 
 

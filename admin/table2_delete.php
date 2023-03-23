@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head><title></title></head>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 <body>
-<a href="table2_gestion.php">retour au tableau de bord</a> 	
-<hr> <h1>gestion de nos albums</h1> <hr>
+<a class="boutonretour" href="table2_gestion.php">retour au tableau de bord</a> 	
+<hr> 
+<h1>gestion de nos albums</h1> 
+<hr>
 
 <?php
 // recupérer dans l'url l'id de l'album à supprimer

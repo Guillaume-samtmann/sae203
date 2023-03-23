@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ajouter albums</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ajouter expédition</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="table1_gestion.php">retour au tableau de bord</a> 	
+<a class="boutonretour" href="table1_gestion.php">retour au tableau de bord</a> 	
 	<hr>
 <h1>gestion de nos albums</h1>
-<p>ajouter ici un album</p>
+<p class="textintroadmin">ajouter ici un album</p>
 <hr>
-<form action="table1_new_valide.php" method="POST" enctype="multipart/form-data">
-    nom d'expédition:<input type="text" name="nomexpe"><br>
-    Lieu:<input type="text" name="lieuexpe"><br>
-    Membre:<input type="text" name="membreexpe"><br>
-    Photo : <input type="file" name="photo" required /><br />
-    date:<input type="datetime-local" name="date"><br>
-    durée:<input type="text" name="duree"><br>
-    l'aventurier:
+<form class="formulaireajout" action="table1_new_valide.php" method="POST" enctype="multipart/form-data">
+    <span>nom d'expédition:</span><input type="text" name="nomexpe"><br>
+    <span>Lieu:</span><input type="text" name="lieuexpe"><br>
+    <span>Membre:</span><input type="text" name="membreexpe"><br>
+    <span>Photo : </span><input type="file" name="photo" required /><br />
+    <span>date:</span><input type="datetime-local" name="date"><br>
+    <span>durée:</span> <input type="text" name="duree"><br>
+    <span>l'aventurier:</span>
     <select name="numaven">
     <?php
 		$mabd = new PDO('mysql:host=localhost;dbname=sae203Base;charset=UTF8;', 'sae203User', 'Gui1598G$');
@@ -31,7 +34,7 @@ foreach ($resultat as $value) {
     </select>
     
     <br>
-    taper pour l'instant un numero d'auteur (1,2,3...) pas son nom :-)<br>
+    <br>
     <input type="submit" name="">
 </form>
 

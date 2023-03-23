@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="admin.php">retour</a> 
+<a class="boutonretour" href="admin.php">retour</a> 
 	<hr>
 <h1>gestion de nos albums</h1>
-<p>pensez a proteger le dossier admin avec un htaccess :-)</p>
+<p class="textintroadmin">crée, modif ou supprime ton aventurier</p>
 <hr>
-<a href="table2_new_form.php">ajouter un album</a>
+<a class="boutonretour" href="table2_new_form.php">ajouter un album</a>
 <table border=1>
 	<thead>
 		<tr><td>nom</td><td>prenom</td><td>age</td><td>supprimer</td><td>modifier</td></tr>

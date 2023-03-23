@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="table1_gestion.php">retour au tableau de bord</a> 	
+<a class="boutonretour" href="table1_gestion.php">retour au tableau de bord</a> 	
 	<hr>
 <h1>gestion de nos albums</h1>
 <h2>vous venez d'ajouter un article</h2>
@@ -46,7 +49,7 @@ $mabd->query('SET NAMES utf8;');
 			die();
 		}
 $req = 'INSERT INTO expedition(nom_expe , lieu_expe , membre_expe , date_expe , dure_expe , id_aven , img_expe) 
-VALUES( "'.$nomexpe.'", "'.$lieuexpe.'", "'.$membreexpe.'", "'.$date.'", "'.$dure.'", "'.$numaven.'","'.$nouvelleImage.'" )';
+VALUES( "'.$nomexpe.'", "'.$lieuexpe.'", "'.$membreexpe.'", "'.$date.'", "'.$dure.'", "'.$numaven.'", "'.$nouvelleImage.'" )';
 echo $req;
 $resultat = $mabd->query($req);
 

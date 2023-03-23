@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ajouter albums</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="table2_gestion.php">retour au tableau de bord</a> 	
+<a class="boutonretour" href="table2_gestion.php">retour au tableau de bord</a> 	
 	<hr>
 <h1>gestion de nos albums</h1>
-<p>ajouter ici un album</p>
+<p class="textintroadmin">ajouter ici un album</p>
 <hr>
-<form action="table2_new_valide.php" method="POST" enctype="multipart/form-data">
-    nom aventurier:<input type="text" name="nomaven"><br>
-    prenom aventurier:<input type="text" name="prenomaven"><br>
-    age:<input type="text" name="age"><br>
+<form class="formulaireajout" action="table2_new_valide.php" method="POST" enctype="multipart/form-data">
+    <span>nom aventurier:</span><input type="text" name="nomaven"><br>
+    <span>prenom aventurier:</span><input type="text" name="prenomaven"><br>
+    <span>age:</span><input type="text" name="age"><br>
     </select>
     
     <br>
-    taper pour l'instant un numero d'auteur (1,2,3...) pas son nom :-)<br>
+    <br>
     <input type="submit" name="">
 </form>
 

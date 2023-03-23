@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>validé</title>
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="table2_gestion.php">retour au tableau de bord</a> 	<br>
+<a class="boutonretour" href="table2_gestion.php">retour au tableau de bord</a> 	<br>
 <br>
-<p>vous venez de modifier un album</p>
+<p class="textintroadmin">vous venez de modifier un album</p>
 
 ...
 <?php

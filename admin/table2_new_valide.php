@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="table2_gestion.php">retour au tableau de bord</a> 	
+<a class="boutonretour" href="table2_gestion.php">retour au tableau de bord</a> 	
 	<hr>
 <h1>gestion de nos albums</h1>
 <h2>vous venez d'ajouter un article</h2>

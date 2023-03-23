@@ -42,104 +42,90 @@
 ul{
     list-style: none;
 }
-    .show-nav .navbar__links{
-        width: 100%;
-    }
-
-    .navbar__link{
-        transform:translatex(101%) ;
-    }
-
-    .show-nav .navbar__link{
-        transform:translatex(0%) ;
-    }
-
-
-
-    .navbar__link > a{
-        display: block;
-        padding: 1rem;
-        font-size: 1.6rem;
-        transition: all .4s ease-in-out;
-    }
-    .navbar__link > a:hover{
-        padding-left: 2rem;
-        letter-spacing: 5px;
-    }
-
-    /*toglle menu*/
-    .burger{
-        display: block;
-        position: relative;
-        padding: 0;
-        width: 45px;
-        height: 45px;
-        border: none;
-        background: transparent;
-        cursor: pointer;
-    }
-
-    .bar{
-        display: block;
-        width: 45px;
-        height: 4px;
-        background: #f0f0f0;
-        border-radius: 3px;
-        transition: all .5s ease-in-out;
-    }
-    .show-nav .bar{
-        width: 0;
-        background: transparent;
-    }
-
-    .bar::before, .bar::after{
-        content: "";
-        width: 45px;
-        height: 4px;
-        position: absolute;
-        left: 0;
-        background: #f0f0f0;
-        border-radius: 3px;
-        transition: all .5s ease-in-out;
-    }
-    .bar::before{
-        transform: translateY(-12px);
-    }
-    .show-nav .bar::before{
-        transform: rotate(45deg);
-    }
-
-    .bar::after{
-        transform: translateY(12px);
-    }
-    .show-nav .bar::after{
-        transform: rotate(-45deg);
-    }
-
-    /*bonus animation*/
-    .show-nav .first{
-        transition: all 1s ease-out;
-    }
-    .show-nav .second{
-        transition: all 1.1s ease-out;
-    }
-    .show-nav .third{
-        transition: all 1.2s ease-out;
-    }
-    .show-nav .four{
-        transition: all 1.3s ease-out;
-    }
-
-
+.show-nav .navbar__links{
+    width: 100%;
+}
+.navbar__link{
+    transform:translatex(101%) ;
+}
+.show-nav .navbar__link{
+    transform:translatex(0%) ;
+}
+.navbar__link > a{
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    transition: all .4s ease-in-out;
+}
+.navbar__link > a:hover{
+    padding-left: 2rem;
+    letter-spacing: 5px;
+}
+/*toglle menu*/
+.burger{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+.show-nav .bar{
+    width: 0;
+    background: transparent;
+}
+.bar::before, .bar::after{
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: #f0f0f0;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+.bar::before{
+    transform: translateY(-12px);
+}
+.show-nav .bar::before{
+    transform: rotate(45deg);
+}
+.bar::after{
+    transform: translateY(12px);
+}
+.show-nav .bar::after{
+    transform: rotate(-45deg);
+}
+/*animation*/
+.show-nav .first{
+    transition: all 1s ease-out;
+}
+.show-nav .second{
+    transition: all 1.1s ease-out;
+}
+.show-nav .third{
+    transition: all 1.2s ease-out;
+}
+.show-nav .four{
+    transition: all 1.3s ease-out;
+}
 /*corp*/
 body{
-    background-color: #d5c6b5
-    
-    
+    background-color: #d5c6b5;   
 }
 .haut-de-page{
     height: 200px;
-    background-image: url(../images/maps3.jpg);
+    background-image: url(../images/banniere.jpg);
     background-repeat: no-repeat;
     background-size: 100vh 200px;
     display: flex;
@@ -147,11 +133,8 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-
-
 h1{
     color: #ffffff;
-    font-size: 1em;
     margin-right: 20px;
     margin-left: 20px;
     text-transform: uppercase;
@@ -162,21 +145,15 @@ h2{
     padding-bottom: 25px;
     padding-left: 10px;
     text-decoration: underline;
-    
 }
-
-
 .haut-de-page p{
     color:rgb(255, 255, 255);
 }
-
-
 .bas-de-page{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
-
 /*carte de présentation*/
 .bas-de-page ul{
     display: flex;
@@ -184,16 +161,15 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .item-a{
-    width: 185px;
+    display: flex;
+    justify-content: center;
     padding-bottom: 25px;
 }
-
 .carte{
     width: 165px;
     height: 260px;
-    background:url(../images/fondcartev3.jpg);
+    background:url(../images/texture_carte.jpg);
     border-radius: 10px;
     box-shadow: 2px 10px 12px black;
     display: flex;
@@ -203,17 +179,14 @@ h2{
     margin: 20px 10px;
     transition: all .5s ease-in-out;
 }
-
 .carte:hover{
    scale: 0.9;
 }
-
 .model{
     padding-top: 10px;
     height: 250px;
     padding-bottom: 20px;
 }
-
 .nom-aventurier{
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -222,7 +195,6 @@ h2{
     padding-top: 10px;
     overflow: hidden;
 }
-
 .nom-lieu{
     color: rgb(0, 0, 0);
     font-size: 13.5px;
@@ -230,99 +202,42 @@ h2{
     letter-spacing: 2px;
     padding-top: 10px;
     overflow: hidden;
-
 }
-
-
-
-
 /*page listing*/
-.haut-de-page-expe{
-    height: 200px;
-    background-image: url(../images/maps3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100vh 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-.haut-de-page-expe h1{
-    color: #ffffff;
-    font-size: 2em;
-}
-
-.haut-de-page-expe p{
-    color: #ffffff;
-    font-size: 1.2em;
-    text-transform: uppercase
-}
-.bas-de-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .carte-expe{
     width: 80%;
-    height: 360px;
-    background:url(../images/fondcartev3.jpg);
+    background:url(../images/texture_carte.jpg);
     border-radius: 10px;
     box-shadow: 2px 10px 12px black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     margin: 20px 10px;
     transition: all .5s ease-in-out;
 }
 .carte-expe:hover{
     scale: 0.9;
- }
+}
 .titre-expe{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
-    overflow: hidden;
     padding-bottom: 15px;
-
 }
-
 .detail{
     padding: 10px 10px;
     font-size: 1.2em;
     overflow: hidden;
     padding-bottom: 25px;
-
 }
 .carte-expe p{
     overflow: hidden;
 }
-
-
 /******recherche***/
-.haut-de-page-form{
-    height: 200px;
-    background-image: url(../images/maps3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100vh 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.haut-de-page-form h1{
-    color: #ffffff;
-    font-size: 2em;
-}
 .fond-form{
     height: 400px;
 }
-
 form{
     margin-top: 100px;
     display: flex;
@@ -330,29 +245,22 @@ form{
     flex-wrap: wrap;
     justify-content:center;
 }
-
 label{
     font-size: 25px;
     margin-right: 10px;
 }
-
-
 #button{
     margin-top: 50px;
     color: white;
     background-color: black;
     padding: 5px;
     transition: all .5s ease-in-out;
-
 }
-
 #button:hover{
     color: rgb(0, 0, 0);
     background-color: rgb(197, 197, 197);
     border: transparent;
 }
-
-
 /*footer*/
 footer{
     height: 50px;
@@ -361,17 +269,13 @@ footer{
     justify-content: center;
     background-color: black;
 }
-
 footer div{
     display: flex;
 }
-
 footer p{
     padding-left: 45px;
     color: #f0f0f0;
 }
-
-
 /***********page admin*******/
 .supportadmin{
 display: flex;
@@ -399,7 +303,6 @@ justify-content: center;
    scale: 0.9;
    opacity: 0.9;
 }
-
 /**************gestion**/
 table{
     margin: 20px 30px 40px 30px;
@@ -413,29 +316,44 @@ table .model{
     width: 50%;
     height: 50%;
 }
-
 .boutonretour{
     font-size: 2em;
     padding: 10px;
     color: #000000;
 }
-
 .textintroadmin{
     font-size: 25px;
     text-align: center;
     padding: 30px;
 }
-
-
-
+.formulaireajout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formulaireajout input{
+    font-size: 2em;
+    width: 649px;
+    height: 62px;
+    padding: 10px
+}
+.formulaireajout span{
+    font-size: 3em;
+    padding: 10px
+}
+.formulaireajout select{
+    width: 320px;
+    height: 60px;
+    font-size: 2em;
+}
 /************version ordinateur***/
 
 @media screen and (min-width:480px){
     header {
         position: fixed;
         width: 100%;
-        z-index: 99;}
-
+        z-index: 99;
+    }
     .burger{
         display: none;
     }
@@ -448,7 +366,6 @@ table .model{
         display: flex;
         flex-direction: row;
         position: inherit;
-        
     }
     .navbar__link > a:hover{
         padding-left: 1rem;
@@ -464,10 +381,8 @@ table .model{
     }
     .navbar__link:hover >a::after{
         width: 100%;
-    }
-     
+    }  
 /*page d'accueil*/
-
 h1{
     color: #000000;
     font-size: 4em;
@@ -478,29 +393,22 @@ h2{
     font-size: 2.5em;
     
 }
-
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .haut-de-page{
     height: 400px;
     width: 100%;
     background-size: cover;
     background-position-y: -202px;
-    justify-content: center;
 }
 /*bas de page*/
-
 .bas-de-page{
-    display: flex;
     width: 100%;
-    flex-direction: row;
     justify-content: center;
 }
-
 .img_expe{
     height: 60%;
     width: 100%;
@@ -511,92 +419,35 @@ main{
     width: 300px;
 
 }
-
 .carte{
     width: 90%;
     height: 300px;
 }
-
 .model{
     width: 65%;
 }
-
-
 .nom-lieu{
     font-size: 20px;
 }
-
-
 /****page listing**/
-.haut-de-page-expe{
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    background-position-y: -202px;
-    justify-content: center;
-
-}
-.haut-de-page-expe h1{
-    color: #000000;
-    font-size: 4em;
-    text-shadow: 3px 2px 5px rgb(255, 255, 255);
-
-}
-.haut-de-page-expe p{
-    color: #000000;
-    font-size: 2em;
-    text-transform: uppercase;
-    text-shadow: 3px 2px 5px rgb(255, 255, 255);
-}
 .carte-expe .model{
     width: 100%;
     overflow: hidden;
-    
 }
-
 .carte-expe{
     width: 90%;
     height: 450px;
 }
-
 .titre-expe{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    overflow: hidden;
-    padding-bottom: 15px;
-
+    padding-bottom: 30px;
 }
-
 .detail{
-    padding: 10px 10px;
-    font-size: 1.2em;
-    overflow: hidden;
     padding-bottom: 50px;
-
 }
-
 /****formulaire***/
-.haut-de-page-form{
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    background-position-y: -202px;
-    justify-content: center;
-
-}
-.haut-de-page-form h1{
-    color: #000000;
-    font-size: 4em;
-    text-shadow: 3px 2px 5px rgb(255, 255, 255);
-
-}
-
 form{
     width: 905px;
     margin-top: 100px;
-    display: flex;
     align-items: center;
 }
 label{
@@ -611,10 +462,22 @@ label{
     width: 900px;
     font-size: 1.2em;
 }
-
 /**********admin********/
-
-
+.formulaireajout{
+    margin-top: 5px;
+    margin-bottom: 60px;
 }
-    
-    
+.formulaireajout input{
+    font-size: 24px;
+    width: 525px;
+    height: 35px;
+    overflow: hidden;
+}
+.formulaireajout span{
+    font-size: 24px;
+}
+.formulaireajout select{
+    font-size: 24px;
+    width: 350px;
+    height: 35px;
+}}

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>modif_aventurier</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<a href="table2_gestion.php">retour au tableau de bord</a> 	
+<a class="boutonretour" href="table2_gestion.php">retour au tableau de bord</a> 	
 	<hr>
 <h1>gestion de nos albums</h1>
-<p>modification d'un album</p>
+<p class="textintroadmin">modification d'un album</p>
 
 <?php
 $id_aven=$_GET['num'];
@@ -22,11 +25,11 @@ echo $album['prenom_ave'];
 ?>
 
 <hr>
-<form action="table2_update_valide.php" method="POST" enctype="multipart/form-data">
+<form class="formulaireajout" action="table2_update_valide.php" method="POST" enctype="multipart/form-data">
 <input type="hidden" name="num"  value="<?php echo $album['id_aven']; ?>">
-    Nom:<input type="text" name="nomaven" value="<?php echo $album['nom_aven']?>" ><br>
-    Prenom:<input type="text" name="prenomaven" value="<?php echo $album['prenom_ave']?>"><br>
-    age:<input type="text" name="age" value="<?php echo $album['age_ave']?>"><br>
+    <span>Nom:</span><input type="text" name="nomaven" value="<?php echo $album['nom_aven']?>" ><br>
+    <span>Prenom:</span><input type="text" name="prenomaven" value="<?php echo $album['prenom_ave']?>"><br>
+    <span>age:</span><input type="text" name="age" value="<?php echo $album['age_ave']?>"><br>
 
     <br>   
     <input type="submit" name="">

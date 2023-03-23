@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head><title></title></head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>supprimez</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
 <body>
-<a href="table1_gestion.php">retour au tableau de bord</a> 	
+<a class="boutonretour" href="table1_gestion.php">retour au tableau de bord</a> 	
 <hr> <h1>gestion de nos albums</h1> <hr>
 
 <?php
