@@ -32,7 +32,7 @@ require 'header.php';
     <option value="jean">Jean</option>
     <option value="erhard">Erhard</option>
     </select>
-    <input id="button" type="submit" value="Afficher les expéditions réaliser par aventurier">
+    <input id="button" type="submit" value="Afficher les expéditions réalisées par aventurier">
 </form>
 </section>
 </main>
