@@ -38,12 +38,13 @@ foreach ($resultat as $value) {
     echo '<ul id="autowidth" class="cs-hidden">' ;
     echo '<li class="item-a">';
     echo '<div class="carte-expe">';
-    echo '<p class="titre-expe"> nom de l\'expéditions : ' .$value['nom_expe'] . '</p>';
+    echo '<p class="titre-expe"> nom de l\'expédition : ' .$value['nom_expe'] . '</p>';
     echo '<p> <img class="model" src="images/uploads/' . $value['img_expe'] . '"> </p>';
-    echo '<div class="detail">';                  
-    echo '<p> durée de l\'expéditions : ' . $value['dure_expe'] . ' en jours</p>';
-    echo '<p> Membre de l\'expéditions : ' . $value['membre_expe'] . '</p>';
-    echo '<p> Lieu de l\'expéditions : ' . $value['lieu_expe'] . '</p>';
+    echo '<div class="detail">';   
+    echo '<p> date de l\'expédition : ' . $value['date_expe'] . '</p>';             
+    echo '<p> durée de l\'expédition : ' . $value['dure_expe'] . ' jours</p>';
+    echo '<p> Membre de l\'expédition : ' . $value['membre_expe'] . '</p>';
+    echo '<p> Lieu de l\'expédition : ' . $value['lieu_expe'] . '</p>';
     echo '<p> Nom aventurier : ' . $value['nom_aven'] . '</p>';
     echo '<p> Prenom aventurier : ' . $value['prenom_ave'] . '</p>';
     echo '<p> Age aventurier : ' . $value['age_ave'] . '</p>';
