@@ -17,7 +17,7 @@ require 'header.php';
 </section>
 <section class="fond-form">
 <form method="post" action="reponse_recherche.php">
-    <label for="texte">Aventuriers : </label>
+    <label for="texte">Aventurier : </label>
     <input id="barre-recherche" type="text" name="texte" id="texte"><br />
     <select name="aven" id="aven-select">
     <option value="">--Aventurier disponible--</option>
@@ -32,7 +32,7 @@ require 'header.php';
     <option value="jean">Jean</option>
     <option value="erhard">Erhard</option>
     </select>
-    <input id="button" type="submit" value="Afficher les expéditions réaliser par l'aventurier">
+    <input id="button" type="submit" value="Afficher les expéditions réaliser par aventurier">
 </form>
 </section>
 </main>
