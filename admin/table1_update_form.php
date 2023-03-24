@@ -6,7 +6,7 @@
 	<title>foemulaire-modif</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body  class="bodyadmin">
 
 <a class="boutonretour" href="table1_gestion.php">retour au tableau de bord</a> 	
 	<hr>

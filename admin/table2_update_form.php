@@ -6,7 +6,7 @@
 	<title>modif_aventurier</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body  class="bodyadmin">
 
 <a class="boutonretour" href="table2_gestion.php">retour au tableau de bord</a> 	
 	<hr>

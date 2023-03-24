@@ -6,7 +6,7 @@
 	<title></title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body  class="bodyadmin">
 <a class="boutonretour" href="admin.php">retour</a> 
 	<hr>
 <h1>gestion de nos albums</h1>

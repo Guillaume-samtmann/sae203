@@ -6,7 +6,7 @@
 	<title></title>
 	<link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body  class="bodyadmin">
 <a href="table1_gestion.php">retour au tableau de bord</a> 	<br>
 <br>
 <p>vous venez de modifier un album</p>
